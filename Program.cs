@@ -10,24 +10,38 @@
 
 
              int[] array = new int[5] {6, 3, 8, 1, 9};
-             int[] arrayCopia = new int[1]; // Vamos passar os vaores do array anterior para este novo array
-
+             int[] arrayCopia = new int[10]; // Agora queremo trabalhar com 10 em um novo array
 
              int valorProcurado = 8; // Experimentar com outros valores além de 0
 
-             int indice = op.ObterIndice(array, valorProcurado);
+            
+            
+            
+            System.Console.WriteLine($"Capacidade atual do array: {array.Length}");
 
-             if (indice > -1) 
-             {
-                 System.Console.WriteLine("O indice procurado do elemento {0} é: {1}", valorProcurado, indice);
-             }
-            else
-            {
-                System.Console.WriteLine("Valor não existente");
-            }
-         }
-     }
+            op.RedimensionarArray(ref array, array.Length * 2);
+
+            System.Console.WriteLine($"Capacidade atual do array após redimensionar: {array.Length}");
+
+        }
+    }
  }
+ 
+            
+            
+            //  int indice = op.ObterIndice(array, valorProcurado);
+
+            //  if (indice > -1) 
+            //  {
+            //      System.Console.WriteLine("O indice procurado do elemento {0} é: {1}", valorProcurado, indice);
+            //  }
+            // else
+            // {
+            //     System.Console.WriteLine("Valor não existente");
+            
+         
+     
+ 
 
           
              
