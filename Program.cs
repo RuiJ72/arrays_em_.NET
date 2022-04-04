@@ -13,6 +13,17 @@ namespace Colecoes
             int[] array = new int[5] {6, 3, 8, 1, 9};
             int[] arrayCopia = new int[10]; // Vamos passar os vaores do array anterior para este novo array
 
+            int valorProcurado = 10; //Se passarmos o valor 10, que não existe, retornará a outra mensagem
+            bool existe = op.Existe(array, valorProcurado);
+
+            if (existe)
+            {
+                System.Console.WriteLine("Encontrado o valor: {0}", valorProcurado);
+            }
+            else
+            {
+                System.Console.WriteLine("valor não encontrado; {0}", valorProcurado);
+            }
 
             //System.Console.WriteLine("Array Original:");
             //op.ImprimirArray(array);
@@ -23,12 +34,12 @@ namespace Colecoes
             //System.Console.WriteLine("Array Ordenado:");
             //op.ImprimirArray(array);
 
-            System.Console.WriteLine("Array antes da cópia:");
-            op.ImprimirArray(array);
+            // System.Console.WriteLine("Array antes da cópia:");
+            // op.ImprimirArray(array);
 
-            op.Copiar(ref array, ref arrayCopia);
-            System.Console.WriteLine("Array após a cópia:");
-            op.ImprimirArray(arrayCopia);
+            // op.Copiar(ref array, ref arrayCopia);
+            // System.Console.WriteLine("Array após a cópia:");
+            // op.ImprimirArray(arrayCopia);
         }
     }
 }

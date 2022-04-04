@@ -48,6 +48,11 @@ namespace Colecoes.helper
             Array.Copy(array, arrayDestino, array.Length); //No último parãmetro podemos especificar quais elementos queremos copiar.
                                                            // No caso queremos uma cópia integral
         }
+
+        public bool Existe(int[] array, int valor)
+        {
+            return Array.Exists(array, elemento => elemento == valor); /* Vai retornar um valor booleano se existir : true se não : false*/
+        }
     }
 }
 
