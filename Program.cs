@@ -8,11 +8,11 @@
          {
              OperacoesArray op = new OperacoesArray();
 
-
+            // Marcar a linha 14 para depuração
              int[] array = new int[5] {6, 3, 8, 1, 9};
              int[] arrayCopia = new int[10]; // Agora queremo trabalhar com 10 em um novo array
-
-             int valorProcurado = 8; // Experimentar com outros valores além de 0
+            string[] arrayString = op. ConverterParaArraySrting(array);
+            
 
             
             

@@ -73,6 +73,11 @@ namespace Colecoes.helper
         {
             Array.Resize(ref array, novoTamanho);
         }
+
+        public string[] ConverterParaArraySrting(int[] array)
+        {
+            return Array.ConvertAll(array, element => element.ToString());
+        }
     }
 }
 
