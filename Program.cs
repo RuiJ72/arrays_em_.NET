@@ -14,18 +14,33 @@ namespace Colecoes
             int[] arrayCopia = new int[1]; // Vamos passar os vaores do array anterior para este novo array
 
 
-            int valorProcurado = 0; // Experimentar com outros valores além de 0
+            int valorProcurado = 9; // Experimentar com outros valores além de 0
 
-            bool TodosMaiorQue = op.TodosMaiorQue(array, valorProcurado); //retorna verdadeiro uma vez que todos são maiores que dez
+            int valorAchado = op.ObterValor(array, valorProcurado);
 
-
-            if (TodosMaiorQue)
+            // Colocar o BreakPoint na linha 21 e Debugar
+            if (valorAchado > 0)
             {
-                System.Console.WriteLine("Todos os valores são maiores que {0}", valorProcurado);
+                System.Console.WriteLine("Valor encontrado");
             }
             else
             {
-                System.Console.WriteLine("Existem valores que não são maiores q o valor procurado {0}", valorProcurado);
+                System.Console.WriteLine("Não encontrado");
+            }
+
+
+           
+           
+            // bool TodosMaiorQue = op.TodosMaiorQue(array, valorProcurado); //retorna verdadeiro uma vez que todos são maiores que dez
+
+
+            // if (TodosMaiorQue)
+            // {
+            //     System.Console.WriteLine("Todos os valores são maiores que {0}", valorProcurado);
+            // }
+            // else
+            // {
+            //     System.Console.WriteLine("Existem valores que não são maiores q o valor procurado {0}", valorProcurado);
             }
 
             // int valorProcurado = 10; //Se passarmos o valor 10, que não existe, retornará a outra mensagem
@@ -57,7 +72,7 @@ namespace Colecoes
             // op.ImprimirArray(arrayCopia);
         }
     }
-}
+
 
 // Método Sort
 // O array foi igualmente ordenado mas pelo método sort
