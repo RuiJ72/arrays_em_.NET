@@ -42,6 +42,12 @@ namespace Colecoes.helper
         {
             Array.Sort(array); // Importando a classe Array. Segurar crtl +c
         }
+
+        public void Copiar(ref int[] array, ref int[]arrayDestino) 
+        {
+            Array.Copy(array, arrayDestino, array.Length); //No último parãmetro podemos especificar quais elementos queremos copiar.
+                                                           // No caso queremos uma cópia integral
+        }
     }
 }
 
