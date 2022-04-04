@@ -53,6 +53,11 @@ namespace Colecoes.helper
         {
             return Array.Exists(array, elemento => elemento == valor); /* Vai retornar um valor booleano se existir : true se não : false*/
         }
+
+        public bool TodosMaiorQue(int[] array, int valor)
+        {
+            return Array.TrueForAll(array, elemento => elemento > valor);
+        }
     }
 }
 
