@@ -1,3 +1,5 @@
+using System;
+
 namespace Colecoes.helper
 {
 
@@ -28,19 +30,24 @@ namespace Colecoes.helper
         
         
         public void ImprimirArray(int[] array)
-        {   
-            
-            
+        
+           
+           
             {
                 var linha = string.Join(",", array);
                 System.Console.WriteLine(linha);
             }
         
+        public void Ordenar(ref int[] array)
+        {
+            Array.Sort(array); // Importando a classe Array. Segurar crtl +c
         }
-    
     }
 }
-// Concatenando os elementos em uma mesma linha 
+
+
+
+
 
 // Colocar um BreakPoint na linha 11 e observar a lógica do código dando F5
 // Após Colocar o BraekPoint na linha 25 3 debugar. Observar o comportamnto

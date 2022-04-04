@@ -13,7 +13,8 @@ namespace Colecoes
             System.Console.WriteLine("Array Original:");
             op.ImprimirArray(array);
 
-            op.OrdenarBublleSort(array);
+            // Ordenando pelo BubbleSort
+            op.Ordenar(ref array);
             
             System.Console.WriteLine("Array Ordenado:");
             op.ImprimirArray(array);
@@ -21,4 +22,6 @@ namespace Colecoes
     }
 }
 
-// Pelo método Bubble Sort conseguimos ordenar o array
+// Método Sort
+// O array foi igualmente ordenado mas pelo método sort
+
